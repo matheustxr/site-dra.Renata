@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: hatton;
+    src: url(./assets/fonts/PP\ HATTON\ BOLD\ 700.OTF);
+}
+
+@font-face {
+    font-family: rnssanz;
+    src: url(./assets/fonts/RNSSANZ-NORMAL.TTF);
+}
+
+@font-face {
+    font-family: rnssanzBold;
+    src: url(./assets/fonts/RNSSANZ-BOLD.TTF);
+}
+
+*{
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rnssanz;
+    font-size: 18px;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+/*ESTILIZAÇÃO SCROLL-BAR */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 8px;
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+background: #ffd78f;
+border-radius: 8px;
+}
+
+h1.font-title{
+    font-family: hatton;
+    font-weight: bold;
+    line-height: 90%;
+}
+
+.text-bold{
+    font-family: rnssanzBold;
+    font-weight: bold;
+}
+
+.bg-banner{
+    background-image: url(./assets//images/bgMobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: #1d3273;
+}
+
+@media (min-width: 768px) {
+    .bg-banner{
+        background-image: url(./assets//images/wavesBG.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 60% 100%;
+        background-color: #1d3273;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bg-banner{
+        background-image: url(./assets//images/wavesBG.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 60%;
+        background-color: #1d3273;
+    }
+}
+
+.bg-footer{
+    background-color: #1d3273;
+    background-image: url(./assets/images/waves-footer.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.shadow-botao{
+    box-shadow: 0 0 10px 1px #ffd892;
+}
+
+.shadow-botao:hover{
+    box-shadow: none
+}
+
+svg.iconChat path{
+    color:#ffd892;
+}
